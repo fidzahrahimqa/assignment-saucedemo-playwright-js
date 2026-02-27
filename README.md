@@ -53,15 +53,15 @@ auto-bugs/ (Generated bug reports)
 playwright.config.js
 
 # Design Pattern Used
-
+```
 Page Object Model (POM)
 Modular feature-based structure
 Retry-aware failure handling
 Separation of test logic and reporting logic
 CI-ready artifact management
-
+```
 #Installation
-
+```
 Check:
 node -v
 
@@ -70,7 +70,7 @@ Install Node.js (if not installed) - https://nodejs.org
 git clone <repo-url>
 cd project
 npm install
-
+```
 # Running Tests
 ```
 Run all tests:
@@ -83,11 +83,12 @@ Run in debug mode:
 npx playwright test --headed --debug
 ```
 # Generate Allure Report
+```
 npx allure generate ./allure-results --clean
 npx allure open
-
+```
 # Failure Debugging Features
-
+```
 Framework automatically captures:
 Screenshot on failure
 Execution logs
@@ -95,8 +96,9 @@ Trace files
 Structured error data
 Artifacts are stored in:
 test-results/
-
+```
 # Automated Bug Reporting Concept
+```
 Framework supports generating structured bug reports from failed tests:
 Includes:
 Title
@@ -107,6 +109,6 @@ Evidence
 Severity
 Output directory:
 auto-bugs/
-
+```
 
 
