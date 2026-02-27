@@ -72,7 +72,7 @@ cd project
 npm install
 
 # Running Tests
-
+```
 Run all tests:
 npx playwright test
 Run specific test:
@@ -81,7 +81,7 @@ Run in headed mode:
 npx playwright test --headed
 Run in debug mode:
 npx playwright test --headed --debug
-
+```
 # Generate Allure Report
 npx allure generate ./allure-results --clean
 npx allure open
