@@ -1,0 +1,19 @@
+{
+  "name": "pi-saucedemo-playwright-js-allure",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf playwright-report test-results allure-results allure-report",
+    "test": "node -e \"console.clear()\" && npm run clean && playwright test",
+    "test:headed": "node -e \"console.clear()\" && npm run clean && playwright test --headed",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "allure-playwright": "^2.0.0",
+    "dotenv": "^16.4.0",
+    "rimraf": "^5.0.0"
+  }
+  
+}
